@@ -1,0 +1,11 @@
+import camion.*
+import carga.*
+import deposito.*
+import motoneta.*
+import ruta.*
+
+test "testX" {
+
+	assert.that(true)
+
+}

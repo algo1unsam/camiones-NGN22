@@ -99,9 +99,9 @@ object embalajeDeSeguridad
 
 object auto
 {
-	method peligrosidad ()= {15}
+	method peligrosidad ()= 15
 }
 object robot
 {
-	method peligrosidad ()= {30}
+	method peligrosidad ()= 30
 }

@@ -4,8 +4,58 @@ import deposito.*
 import motoneta.*
 import ruta.*
 
-test "testX" {
-
-	assert.that(true)
-
+test "si la carga esta => verdadero" {
+	
+	camion.cargar(knightRider)
+	
+	assert.that(camion.consultaCarga(knightRider))	
 }
+
+test "Bumblebee: pesa 800 kilos y su nivel de peligrosidad
+		 es 15 si está transformado
+		 en auto o 30 si está en su forma de robot."
+		 {
+		 
+		 assert.equals(15,bumblebee.peligrosidad())
+		 bumblebee.forma(robot)	
+		 assert.equals(30,bumblebee.peligrosidad())
+		 }
+test "deposito recibe agrega cosas a la motoneta"
+{
+	deposito.guardarEnDeposito([bumblebee,paqueteDeLadrillos])
+	deposito.llenarTransporte(motoneta)
+	assert.that(motoneta.consultaCarga(paqueteDeLadrillos))
+	
+}
+test "consultar peso disponible camion"
+{
+	deposito.guardarEnDeposito([bumblebee])//pesa 800
+	deposito.llenarTransporte(camion)//max 900
+	assert.equals(100,camion.cargaDisponible())
+}
+
+test "peligrosidad maxima de la carga"
+{
+	deposito.guardarEnDeposito([bumblebee,paqueteDeLadrillos])
+	deposito.llenarTransporte(camion)
+	assert.equals(bumblebee,camion.laCargaMasPeligrosa())
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

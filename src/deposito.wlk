@@ -5,7 +5,7 @@ import motoneta.*
 object deposito
 {
 	//coleccion
-	var cargaEnDeposito 
+	var cargaEnDeposito = []
 	
 	//recibe una collecion
 	//o cosas unitarias a agregar a la coleccion concatenar

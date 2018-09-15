@@ -1,9 +1,10 @@
 import deposito.*
+import carga.*
 
 
 object camion
 {
-	var cargaEnCamion = null
+	var cargaEnCamion = []
 	var property cargaMaxima = 900 // x defecto se le asigna 500 de carga maxima
 		
 	//parte A

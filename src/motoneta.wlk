@@ -3,7 +3,7 @@ import deposito.*
 
 object motoneta 
 {
-	var cargaDeLaMotoneta = null
+	var cargaDeLaMotoneta = []
 	var cargaMaxima = 100
 	
 	
@@ -46,7 +46,11 @@ object motoneta
 		return unaCosa.peso() < self.cargaDisponible()
 	}
 	
-	
+	//post true si se encontro 
+	method consultaCarga( unaCosa )
+	{
+		return cargaDeLaMotoneta.contains( unaCosa )
+	}
 	
 	
 	

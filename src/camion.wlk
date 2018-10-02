@@ -21,6 +21,8 @@ object camion
 		}
 		else
 		{
+			// TODO en lugar de ponerla y sacarla, lo mejor sería preguntar primero
+			// si puede guardara y si no puede, tirar una excepción, para que no siga
 			deposito.guardarEnDeposito(unaCosa)
 		}
 	}

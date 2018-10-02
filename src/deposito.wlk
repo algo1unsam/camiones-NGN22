@@ -14,6 +14,7 @@ object deposito
 	//post agregala coleccion recibida a la actual
 	method guardarEnDeposito(agregar)
 	{
+		// TODO creo que con el addAll ya estabas!
 		cargaEnDeposito = [cargaEnDeposito,agregar].flatten()
 	}
 	
